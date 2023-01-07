@@ -44,7 +44,7 @@ export function Blog() {
 
             <PostsList>
                 {posts.map(post => (
-                    <PostContainer onClick={() => alert('here')}>
+                    <PostContainer to="post">
                         <PostContent>
                             <header>
                                 <PostTitle>

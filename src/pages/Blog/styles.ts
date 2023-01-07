@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BlogContainer = styled.div`
@@ -16,16 +17,15 @@ export const PostsList = styled.div`
     gap: 2rem;
 `;
 
-export const PostContainer = styled.div`
+export const PostContainer = styled(Link)`
+    display: block;
+    text-decoration: none;
     width: 416px;
     height: 260px;
     background-color: ${({ theme }) => theme['base-post']};
     border: 0;
     border-radius: 10px;
-
     padding: 32px;
-
-    cursor: pointer;
 `;
 
 export const PostContent = styled.div`
@@ -39,13 +39,18 @@ export const PostContent = styled.div`
         justify-content: space-between;
         gap: 1rem;
     }
+
+    p {
+        color: ${({ theme }) => theme['base-text']};
+    }
+
 `;
 
 export const PostTitle = styled.span`
     width: 80%;
     font-size: 20px;
     font-weight: bold;
-    color: ${({ theme }) => theme['base-title']};
+    color: #E7EDF4;
     line-height: 160%;
 `;
 

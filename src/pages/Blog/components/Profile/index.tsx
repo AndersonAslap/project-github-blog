@@ -1,7 +1,6 @@
 import { ProfileAside, ProfileContainer, ProfileContent, ProfileImage } from "./styles";
 
 import { FaGithub, FaBuilding, FaUsers } from 'react-icons/fa';
-import { RiGroupLine } from 'react-icons/ri';
 
 export function Profile() {
     return (
